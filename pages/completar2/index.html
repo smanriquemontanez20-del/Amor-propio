@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Parejas</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+   <div class="container">
+
+        <div class="actividad">
+
+            <h2 class="text-center mb-5">
+                Completa las parejas
+            </h2>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="pareja">
+                        Respeto
+
+                    </div>
+
+                    <div class="pareja">
+                        Amor 
+                    </div>
+
+                    <div class="pareja">
+                        Autoestima
+                    </div>
+
+                </div>
+
+          
+                <div class="col-md-6">
+
+                    <div class="mb-4">
+
+                        <select class="form-select respuesta" data-correcta="valorar y tratar bien a los demás y a uno mismo.">
+                            <option value="">Seleccione</option>
+                            <option>valorar y tratar bien a los demás y a uno mismo.</option>
+                            <option>sentimiento de cariño, cuidado y apoyo hacia alguien o algo.</option>
+                            <option>la forma en que una persona se valora y se siente consigo misma.</option>
+                        </select>
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <select class="form-select respuesta" data-correcta="Unión basada en confianza, comprensión y aprecio.">
+                            <option value="">Seleccione</option>
+                            <option>Valorar los derechos y opiniones de los demás.</option>
+                            <option>Unión basada en confianza, comprensión y aprecio.</option>
+                            <option>Sentirse bien y seguro con quien se es.</option>
+                        </select>
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <select class="form-select respuesta" data-correcta="Confianza en las propias capacidades y cualidades.">
+                            <option value="">Seleccione</option>
+                            <option>Actuar con educación y consideración hacia uno mismo y otros.</option>
+                            <option>Deseo de cuidar, apoyar y proteger a otra persona.</option>
+                            <option>Confianza en las propias capacidades y cualidades.</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                <button class="btn btn-success" onclick="verificar()">
+                    Verificar
+                </button>
+
+                <button class="btn btn-primary" onclick="reiniciar()">
+                    Reiniciar
+                </button>
+
+            </div>
+
+            <div id="resultado" class="resultado">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <audio id="audioBien" src="audios/success.mp3"></audio>
+    <audio id="audioMal" src="audios/twin.mp3"></audio>
+    <audio id="audioAplausos" src="audio/aplausos.mp3"></audio>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar Frase con Input</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="actividad">
+
+            <h2 class="text-center mb-5">
+                Completa la frase
+            </h2>
+
+            <div class="frase text-center">
+
+                El amor
+
+                <input type="text" class="respuesta" data-correcta="propio" placeholder="Respuesta">
+
+                es muy
+
+                <input type="text" class="respuesta" data-correcta="importante" placeholder="Respuesta">
+
+                para nuestras
+
+                <input type="text" class="respuesta" data-correcta="vidas" placeholder="Respuesta">
+
+                .
+
+            </div>
+
+            <div class="text-center mt-5">
+
+                <button class="btn btn-success" onclick="verificar()">
+                    Verificar
+                </button>
+
+                <button class="btn btn-primary" onclick="reiniciar()">
+                    Reiniciar
+                </button>
+
+            </div>
+
+            <div id="resultado" class="resultado">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <audio id="audioBien" src="audios/success.mp3"></audio>
+    <audio id="audioMal" src="audios/twin.mp3"></audio>
+    <audio id="audioAplausos" src="audio/aplausos.mp3"></audio>
+
+
+
+
+
+</body>
+
+</html>
